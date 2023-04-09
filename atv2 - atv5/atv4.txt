@@ -1,0 +1,6 @@
+Uma chamada a super() pode estar em qualquer local do construtor de uma subclasse?
+
+R: Não, uma chamada a super() deve ser a primeira instrução no construtor da subclasse. 
+Isso porque a primeira coisa que um construtor faz é chamar o construtor da sua superclasse, 
+para garantir que a inicialização de todos os membros da classe base seja feita antes da inicialização dos membros da subclasse.
+Se a chamada a super() não for a primeira instrução do construtor da subclasse, o compilador emitirá um erro

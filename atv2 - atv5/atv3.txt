@@ -1,0 +1,5 @@
+Os parâmetros podem ser passados via super()?
+
+R: Sim, os parâmetros podem ser passados via super() para o construtor da superclasse. 
+Quando você chama super() dentro do construtor da subclasse, 
+você está chamando um construtor da superclasse e pode passar argumentos para esse construtor.

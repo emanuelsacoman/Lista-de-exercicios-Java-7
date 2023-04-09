@@ -1,0 +1,17 @@
+Suponhamos que uma classe A tivesse os métodos públicos m1(), m2() e m3()
+e uma subclasse B tivesse os métodos públicos m4() e m5().
+    a. Desenhe o diagrama de classes para esse exercício para realizar o exercício, porém, não
+    é necessário postar este item.
+    b. Quais dos cinco métodos podem ser acessados por objetos da classe A?
+    c. Quais dos cinco métodos podem ser acessados por objetos da classe B?
+    d. Suponhamos que m1() fosse declarado como private. Agora quais dos cinco métodos
+    podem ser acessados por objetos da classe B?
+
+R: 
+
+b. Os objetos da classe A podem acessar os métodos m1(), m2() e m3().
+
+c. Os objetos da classe B podem acessar os métodos m1(), m2(), m3(), m4() e m5().
+
+d. Se m1() fosse declarado como private, os objetos da classe B não poderiam acessá-lo. 
+Portanto, eles só poderiam acessar os métodos m2(), m3(), m4() e m5().

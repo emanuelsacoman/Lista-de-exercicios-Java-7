@@ -1,0 +1,5 @@
+Como uma subclasse executa o construtor de sua superclasse?
+
+R: Uma subclasse executa o construtor de sua superclasse por meio da palavra-chave super(). 
+O construtor da superclasse é chamado no construtor da subclasse usando super(), 
+que é sempre a primeira instrução do construtor da subclasse.
