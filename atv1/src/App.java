@@ -1,9 +1,13 @@
 public class App {
-    public static void main(String[] args) throws Exception {
-        ClienteEspecial conta1 = new ClienteEspecial(50, 50, 50, "false");
-        ClienteEspecial conta2 = new ClienteEspecial(50, 50, 50, "true");
+    public static void main(String[] args) {
+        ContaCorrente cc = new ContaCorrente();
+        cc.depositar(1000);
+        cc.sacar(100);
+        System.out.println(cc.getSaldo());
 
-        System.out.println(conta1.isEspecial());
-        System.out.println(conta2.isEspecial());
+        ContaCorrenteEspecial cce = new ContaCorrenteEspecial();
+        cce.depositar(1000);
+        cce.sacar(100);
+        System.out.println(cce.getSaldo());
     }
 }

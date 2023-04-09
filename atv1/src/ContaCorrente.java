@@ -1,29 +1,26 @@
 public class ContaCorrente {
-    private double depositar;
-    private double sacar;
-    private double obter;
-    private String especial;
+    private double saldo;
+    private double taxaOperacao;
 
-    public ContaCorrente(double depositar, double sacar, double obter, String especial){
-        this.depositar = depositar;
-        this.sacar = sacar;
-        this.obter = obter;
-        this.especial = especial;
+    public ContaCorrente() {
+        this.saldo = 0;
+        this.taxaOperacao = 0.005;
     }
 
-    public String getEspecial(){
-        return especial;
+    public void depositar(double valor) {
+        this.saldo += valor;
     }
 
-    public double getDepositar(){
-        return depositar;
+    public void sacar(double valor) {
+        double taxa = valor * getTaxaOperacao();
+        this.saldo -= (valor + taxa);
     }
 
-    public double getSacar(){
-        return sacar;
+    public double getSaldo() {
+        return this.saldo;
     }
 
-    public double getObter(){
-        return obter;
+    public double getTaxaOperacao() {
+        return this.taxaOperacao;
     }
 }
