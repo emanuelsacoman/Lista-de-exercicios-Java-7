@@ -1,0 +1,9 @@
+A saída do programa será:
+
+Construção de A.
+Construção de B.
+Construção de C.
+
+Isso acontece porque a classe C estende a classe B, que por sua vez estende a classe A. 
+Quando um objeto da classe C é criado, primeiro é chamado o construtor da classe A, 
+seguido do construtor da classe B e, por fim, o construtor da classe C.
